@@ -2,45 +2,93 @@ import { Container } from "@/components/layout/Container";
 import { SEOHead } from "@/components/shared/SEOHead";
 
 export default function TermsPage() {
-    return (
-        <>
-            <SEOHead title="Terms of Service" />
-            <div className="pt-24 pb-16">
-                <Container className="max-w-3xl">
-                    <h1 className="text-4xl font-heading mb-8">Terms of Service</h1>
+  return (
+    <>
+      <SEOHead title="Terms of Service" />
 
-                    <div className="prose prose-orange max-w-none text-gray-700">
-                        <p className="lead text-xl text-gray-600 mb-8">
-                            Last updated: October 2023
-                        </p>
+      <div className="pt-24 pb-16 bg-background">
+        <Container className="max-w-3xl">
 
-                        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
-                        <p className="mb-6">
-                            By accessing and using the Maayad Dairy website and our services, you accept and agree to be bound by the terms and provision of this agreement.
-                        </p>
+          <h1 className="text-4xl font-heading mb-8">
+            Terms of Service
+          </h1>
 
-                        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Subscription & Delivery</h2>
-                        <p className="mb-4">
-                            We operate primarily on a subscription basis for our daily milk deliveries.
-                        </p>
-                        <ul className="list-disc pl-5 mb-6 space-y-2">
-                            <li>Deliveries are made between 5:00 AM and 7:30 AM daily.</li>
-                            <li>Subscription modifications (pause/resume) must be made before 8:00 PM for the next day&apos;s delivery.</li>
-                            <li>We are not responsible for spoilage if the milk is left unattended for extended periods after delivery.</li>
-                        </ul>
+          <div className="prose max-w-none text-gray-700">
 
-                        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Quality & Source</h2>
-                        <p className="mb-6">
-                            Maayad Dairy guarantees that our products are sourced exclusively from our own farm of Gir cows. We do not use hormonal injections, antibiotics, or synthetic adulterants. Natural variations in milk thickness and color may occur depending on the cows&apos; diet and changing seasons.
-                        </p>
+            <p className="text-lg text-gray-600 mb-8">
+              Last updated: {new Date().getFullYear()}
+            </p>
 
-                        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Refunds and Returns</h2>
-                        <p className="mb-6">
-                            Due to the perishable nature of dairy products, we do not accept returns. If you receive a damaged product or have quality concerns, please contact our support team within 4 hours of delivery for a replacement or refund consideration.
-                        </p>
-                    </div>
-                </Container>
-            </div>
-        </>
-    );
+            {/* 1 */}
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+              By accessing and using the PasuVanam website, you agree to be bound by these Terms of Service. 
+              If you do not agree, please do not use our website or services.
+            </p>
+
+            {/* 2 */}
+            <h2>2. Products & Orders</h2>
+            <p>
+              We offer ghee products for purchase through our website. All orders are subject to availability and confirmation.
+            </p>
+
+            <ul>
+              <li>Prices are listed in INR and may change without prior notice</li>
+              <li>We reserve the right to cancel or refuse any order if necessary</li>
+              <li>Product images are for representation purposes only</li>
+            </ul>
+
+            {/* 3 */}
+            <h2>3. Shipping & Delivery</h2>
+            <p>
+              Orders are processed and shipped as per our shipping policy. Delivery timelines may vary depending on your location and external factors.
+            </p>
+
+            {/* 4 */}
+            <h2>4. Returns & Refunds</h2>
+            <p>
+              Due to the consumable nature of our products, returns are not accepted once delivered. 
+              However, in case of damaged or incorrect items, please contact us within 24 hours for resolution.
+            </p>
+
+            {/* 5 */}
+            <h2>5. Use of Website</h2>
+            <p>
+              You agree not to misuse our website or engage in activities that may harm the platform or other users.
+            </p>
+
+            {/* 6 */}
+            <h2>6. Intellectual Property</h2>
+            <p>
+              All content on this website, including text, images, and branding, is the property of PasuVanam and may not be used without permission.
+            </p>
+
+            {/* 7 */}
+            <h2>7. Limitation of Liability</h2>
+            <p>
+              We are not liable for any indirect or incidental damages arising from the use of our products or website.
+            </p>
+
+            {/* 8 */}
+            <h2>8. Changes to Terms</h2>
+            <p>
+              We may update these Terms of Service at any time. Changes will be reflected on this page.
+            </p>
+
+            {/* 9 */}
+            <h2>9. Contact</h2>
+            <p>
+              If you have any questions regarding these terms, please contact us at:
+            </p>
+
+            <p>
+              <strong>Email:</strong> hello@pasuvanam.in <br />
+              <strong>Phone:</strong> +91 98765 43210
+            </p>
+
+          </div>
+        </Container>
+      </div>
+    </>
+  );
 }

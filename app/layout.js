@@ -11,8 +11,8 @@ const yatraOne = Yatra_One({
 });
 
 export const metadata = {
-  title: "Maayad A2 Gir Milk",
-  description: "Premium A2 Gir Cow Milk and Bilona Ghee",
+  title: "PasuVanam - Premium Ghee",
+  description: "Experience the rich, authentic taste of PasuVanam Ghee.",
 };
 
 export default function RootLayout({ children }) {

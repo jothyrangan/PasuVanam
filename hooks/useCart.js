@@ -49,7 +49,7 @@ export const useCart = create(
             }
         }),
         {
-            name: 'maayad-cart-storage',
+            name: 'pasuvanam-cart-storage',
             storage: createJSONStorage(() => localStorage),
         }
     )

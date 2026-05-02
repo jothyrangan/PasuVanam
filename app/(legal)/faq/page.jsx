@@ -1,70 +1,107 @@
 import { Container } from "@/components/layout/Container";
 import { SEOHead } from "@/components/shared/SEOHead";
 import { Plus, Minus } from "lucide-react";
+import Link from "next/link";
+import { ROUTES } from "@/lib/constants";
 
 export default function FAQPage() {
-    const faqs = [
-        {
-            question: "What is A2 Milk and how is it different?",
-            answer: "A2 milk is produced by traditional Indian cow breeds like the Gir cow. It contains only the A2 type of beta-casein protein, which is naturally easier to digest compared to the A1 protein found in milk from cross-bred foreign cows (like Holstein or Jersey)."
-        },
-        {
-            question: "Is your milk raw or pasteurized?",
-            answer: "We deliver raw, chilled milk straight from the farm to ensure all natural enzymes and nutrients remain intact. We highly recommend boiling the milk once before consumption."
-        },
-        {
-            question: "How does the subscription work?",
-            answer: "You can set up a daily, alternate day, or custom schedule subscription. You pay in advance into your Maayad Wallet, and the amount is deducted daily upon successful delivery. You can pause the subscription at any time from your account."
-        },
-        {
-            question: "How do you make your Bilona Ghee?",
-            answer: "Our ghee is made using the ancient Vedic 'Bilona' method. We first convert whole A2 milk into curd, then churn the curd using a wooden bilona (churner) to separate the makkhan (butter), which is then slowly heated over a cow-dung cake fire to produce pure, aromatic ghee."
-        },
-        {
-            question: "Can I pause my milk delivery if I go out of town?",
-            answer: "Yes, absolutely! You can pause your delivery via our app/website or by sending us a message on WhatsApp. Please ensure you notify us before 8 PM for changes to take effect the next morning."
-        }
-    ];
+  const faqs = [
+    {
+      question: "Is your ghee completely pure?",
+      answer:
+        "Yes, our ghee is made with a strong focus on purity and quality. We do not use any additives, preservatives, or artificial processing.",
+    },
+    {
+      question: "What makes your ghee different?",
+      answer:
+        "Our ghee is prepared using traditional methods that preserve its natural aroma, texture, and taste. Every batch is crafted carefully to ensure consistency and quality.",
+    },
+    {
+      question: "Can I use this ghee for daily cooking?",
+      answer:
+        "Absolutely. Our ghee is perfect for everyday cooking, frying, and even traditional uses like pooja. It enhances flavor while maintaining its natural richness.",
+    },
+    {
+      question: "How should I store ghee?",
+      answer:
+        "Store it in a cool, dry place away from direct sunlight. Always use a clean, dry spoon to maintain freshness and shelf life.",
+    },
+    {
+      question: "Does ghee need refrigeration?",
+      answer:
+        "No, ghee does not require refrigeration. It naturally has a long shelf life when stored properly.",
+    },
+    {
+      question: "Is your ghee suitable for children and elders?",
+      answer:
+        "Yes, ghee is widely used across all age groups. It is a part of traditional diets and can be included in daily meals in moderate quantities.",
+    },
+  ];
 
-    return (
-        <>
-            <SEOHead title="Frequently Asked Questions" />
-            <div className="pt-24 pb-16">
-                <Container className="max-w-3xl">
-                    <div className="text-center mb-12">
-                        <h1 className="text-4xl font-heading mb-4">Frequently Asked Questions</h1>
-                        <p className="text-gray-600 text-lg">Everything you need to know about our products and services.</p>
-                    </div>
+  return (
+    <>
+      <SEOHead title="FAQs" />
 
-                    <div className="space-y-4">
-                        {faqs.map((faq, index) => (
-                            <details key={index} className="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
-                                <summary className="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-gray-900 group-open:bg-orange-50/50 group-open:text-primary transition-colors">
-                                    <span className="text-lg">{faq.question}</span>
-                                    <span className="transition-transform duration-300">
-                                        <Plus className="w-5 h-5 text-gray-400 group-open:hidden" />
-                                        <Minus className="w-5 h-5 text-gray-400 hidden group-open:block" />
-                                    </span>
-                                </summary>
-                                <div className="p-5 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
-                                    <p className="mt-4">{faq.answer}</p>
-                                </div>
-                            </details>
-                        ))}
-                    </div>
+      <div className="pt-24 pb-16 bg-background">
+        <Container className="max-w-3xl">
 
-                    <div className="mt-16 bg-orange-50/50 border border-orange-100 rounded-2xl p-8 text-center">
-                        <h3 className="text-xl font-semibold mb-2">Still have questions?</h3>
-                        <p className="text-gray-600 mb-6">Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.</p>
-                        <a
-                            href="/contact"
-                            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-white shadow-soft transition-colors hover:bg-primary/90"
-                        >
-                            Get in Touch
-                        </a>
-                    </div>
-                </Container>
-            </div>
-        </>
-    );
+          {/* Header */}
+          <div className="text-center mb-14">
+            <h1 className="text-4xl font-heading mb-4">
+              Frequently Asked Questions
+            </h1>
+
+            <p className="text-gray-600 text-lg">
+              Everything you need to know about our ghee.
+            </p>
+          </div>
+
+          {/* FAQ List */}
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <details
+                key={index}
+                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-soft hover:shadow-md transition"
+              >
+                <summary className="flex justify-between items-center cursor-pointer list-none p-5 text-gray-900 font-medium group-open:bg-primary/5 transition">
+
+                  <span className="text-base md:text-lg">
+                    {faq.question}
+                  </span>
+
+                  <span className="transition-transform duration-300">
+                    <Plus className="w-5 h-5 text-gray-400 group-open:hidden" />
+                    <Minus className="w-5 h-5 text-gray-400 hidden group-open:block" />
+                  </span>
+                </summary>
+
+                <div className="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100">
+                  <p className="mt-4">{faq.answer}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 bg-primary/5 border border-primary/10 rounded-2xl p-8 text-center">
+            <h3 className="text-xl font-semibold mb-2">
+              Still have questions?
+            </h3>
+
+            <p className="text-gray-600 mb-6">
+              Our team is here to help you with anything you need.
+            </p>
+
+            <Link
+              href={ROUTES.CONTACT}
+              className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-white shadow-soft hover:bg-primary/90 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+        </Container>
+      </div>
+    </>
+  );
 }

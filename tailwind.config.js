@@ -8,21 +8,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "#8B4513",
-        secondary: "#F5F5DC",
-        accent: "#228B22",
+        background: "#FFF7ED",   // soft cream (milk feel)
+        foreground: "#1F2937",
+
+        primary: "#E07A1F",      // 🔶 logo orange
+        secondary: "#2F5D3A",    // 🌿 logo green
+        accent: "#4CAF50",       // lighter green
+
+        muted: "#F3F4F6",
+        border: "#E5E7EB",
       },
+
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
         heading: ['var(--font-yatra)', 'serif', 'Georgia'],
       },
+
       borderRadius: {
         md: '10px',
+        xl: '18px',
       },
+
       boxShadow: {
-        soft: '0 4px 14px 0 rgba(0, 0, 0, 0.05)',
+        soft: '0 6px 25px rgba(0, 0, 0, 0.06)',
+        glow: '0 10px 40px rgba(224, 122, 31, 0.25)', // orange glow
       }
     },
   },

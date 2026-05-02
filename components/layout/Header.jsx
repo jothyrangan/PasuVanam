@@ -14,7 +14,7 @@ const NAV_LINKS = [
     { name: "Home", href: ROUTES.HOME },
     { name: "Shop", href: ROUTES.SHOP },
     { name: "Our Farm", href: ROUTES.ABOUT },
-    { name: "Why Maayad", href: ROUTES.WHY_MAAYAD },
+    { name: "Process", href: ROUTES.PROCESS },
 ];
 
 export const Header = () => {
