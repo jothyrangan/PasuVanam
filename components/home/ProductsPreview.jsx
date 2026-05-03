@@ -52,7 +52,7 @@ export const ProductsPreview = () => {
                                 <p className="text-gray-600 text-sm mb-6 line-clamp-2">
                                     {product.description}
                                 </p>
-                                <Link href={`${ROUTES.SHOP}/${product.slug}`}>
+                                <Link href={`${ROUTES.PRODUCT}/${product.slug}`}>
                                     <Button className="w-full rounded-xl bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
                                         View Details
                                     </Button>

@@ -20,7 +20,7 @@ export default function ShopPage() {
                         </div>
 
                         {/* Simple Filter Placeholder */}
-                        <div className="flex gap-2">
+                        {/* <div className="flex gap-2">
                             <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary text-white text-sm font-medium cursor-pointer">
                                 All
                             </span>
@@ -30,7 +30,7 @@ export default function ShopPage() {
                             <span className="inline-flex items-center px-4 py-2 rounded-full border border-gray-200 text-gray-700 text-sm font-medium hover:bg-gray-50 cursor-pointer transition-colors">
                                 Ghee
                             </span>
-                        </div>
+                        </div> */}
                     </div>
 
                     <ProductGrid products={PRODUCTS} />
