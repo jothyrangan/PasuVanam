@@ -93,7 +93,7 @@ export default function TermsPage() {
             </p>
 
             <p>
-              <strong>Email:</strong> hello@pasuvanam.in <br />
+              <strong>Email:</strong> contact@pasuvanam.com <br />
               <strong>Phone:</strong> +91 97889 09837
             </p>
           </div>

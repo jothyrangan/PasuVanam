@@ -81,7 +81,7 @@ export default function PrivacyPage() {
             </p>
 
             <p>
-              <strong>Email:</strong> hello@pasuvanam.in <br />
+              <strong>Email:</strong> contact@pasuvanam.com <br />
               <strong>Phone:</strong> +91 97889 09837
             </p>
           </div>
