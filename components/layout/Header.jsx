@@ -129,11 +129,11 @@ export const Header = () => {
                 ))}
               </nav>
             </div>
-            <div className="pt-6 border-t border-gray-100 pb-safe">
+            {/* <div className="pt-6 border-t border-gray-100 pb-safe">
               <Button className="w-full bg-primary hover:bg-primary/90 py-6 text-lg rounded-xl">
                 Start Subscription
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

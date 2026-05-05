@@ -7,9 +7,8 @@ export default function AboutPage() {
     <>
       <SEOHead title="About PasuVanam" />
 
-      <div className="pt-24 pb-16 bg-background">
+      <div className="pt-24 pb-16 bg-transparent">
         <Container>
-
           {/* Heading */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-heading mb-4">
@@ -54,7 +53,6 @@ export default function AboutPage() {
 
           {/* Section 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
               <Image
                 src="https://i.pinimg.com/736x/d1/5d/ce/d15dce1a667efbfa2a9d6c2b6e2a446a.jpg"
@@ -82,12 +80,11 @@ export default function AboutPage() {
               </p>
 
               <p>
-                Whether it’s for daily cooking or traditional rituals,
-                PasuVanam ghee is made to be a part of your everyday life.
+                Whether it’s for daily cooking or traditional rituals, PasuVanam
+                ghee is made to be a part of your everyday life.
               </p>
             </div>
           </div>
-
         </Container>
       </div>
     </>

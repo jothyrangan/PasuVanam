@@ -42,9 +42,8 @@ export default function FAQPage() {
     <>
       <SEOHead title="FAQs" />
 
-      <div className="pt-24 pb-16 bg-background">
+      <div className="pt-24 pb-16 bg-transparent">
         <Container className="max-w-3xl">
-
           {/* Header */}
           <div className="text-center mb-14">
             <h1 className="text-4xl font-heading mb-4">
@@ -64,10 +63,7 @@ export default function FAQPage() {
                 className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-soft hover:shadow-md transition"
               >
                 <summary className="flex justify-between items-center cursor-pointer list-none p-5 text-gray-900 font-medium group-open:bg-primary/5 transition">
-
-                  <span className="text-base md:text-lg">
-                    {faq.question}
-                  </span>
+                  <span className="text-base md:text-lg">{faq.question}</span>
 
                   <span className="transition-transform duration-300">
                     <Plus className="w-5 h-5 text-gray-400 group-open:hidden" />
@@ -99,7 +95,6 @@ export default function FAQPage() {
               Contact Us
             </Link>
           </div>
-
         </Container>
       </div>
     </>

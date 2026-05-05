@@ -6,7 +6,7 @@ export default function PrivacyPage() {
     <>
       <SEOHead title="Privacy Policy" />
 
-      <div className="pt-24 pb-16 bg-background">
+      <div className="pt-24 pb-16 bg-transparent">
         <Container className="max-w-3xl">
           <h1 className="text-4xl font-heading mb-8">Privacy Policy</h1>
 

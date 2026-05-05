@@ -8,9 +8,8 @@ export default function OurProcessPage() {
     <>
       <SEOHead title="Our Process" />
 
-      <div className="pt-24 pb-16 bg-background">
+      <div className="pt-24 pb-16 bg-transparent">
         <Container>
-
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-heading mb-6">
@@ -18,19 +17,17 @@ export default function OurProcessPage() {
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Every jar of our ghee is crafted with care, patience, and attention
-              to detail — preserving purity, aroma, and traditional goodness.
+              Every jar of our ghee is crafted with care, patience, and
+              attention to detail — preserving purity, aroma, and traditional
+              goodness.
             </p>
           </div>
 
           {/* Section 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-            
             {/* Text */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-semibold">
-                Carefully Crafted
-              </h2>
+              <h2 className="text-2xl font-semibold">Carefully Crafted</h2>
 
               <p className="text-gray-700 leading-relaxed">
                 We follow a slow and mindful process to ensure that every batch
@@ -49,8 +46,8 @@ export default function OurProcessPage() {
 
                 <p className="text-gray-700 text-sm leading-relaxed">
                   No shortcuts, no unnecessary processing — just clean,
-                  traditional preparation methods that preserve authenticity
-                  and taste.
+                  traditional preparation methods that preserve authenticity and
+                  taste.
                 </p>
               </div>
             </div>
@@ -68,7 +65,6 @@ export default function OurProcessPage() {
 
           {/* Section 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-
             {/* Image */}
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
               <Image
@@ -81,9 +77,7 @@ export default function OurProcessPage() {
 
             {/* Text */}
             <div className="space-y-6 order-1 lg:order-2">
-              <h2 className="text-2xl font-semibold">
-                Purity in Every Step
-              </h2>
+              <h2 className="text-2xl font-semibold">Purity in Every Step</h2>
 
               <p className="text-gray-700 leading-relaxed">
                 From preparation to packaging, every stage is handled with care
@@ -101,8 +95,8 @@ export default function OurProcessPage() {
                 </h3>
 
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Attention to detail, consistency in quality, and a deep respect
-                  for traditional preparation methods.
+                  Attention to detail, consistency in quality, and a deep
+                  respect for traditional preparation methods.
                 </p>
               </div>
             </div>
@@ -110,7 +104,6 @@ export default function OurProcessPage() {
 
           {/* Trust Section */}
           <TrustBadges />
-
         </Container>
       </div>
     </>

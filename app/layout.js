@@ -19,13 +19,33 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${yatraOne.variable} font-sans antialiased text-foreground bg-background min-h-screen flex flex-col`}
+        className={`${inter.variable} ${yatraOne.variable} font-sans antialiased text-foreground bg-transparent min-h-screen flex flex-col`}
       >
+
+        {/* 🎥 Background Video */}
+        <div className="fixed inset-0 -z-10 overflow-hidden">
+          <video
+            src="/cows.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+
+        {/* 🌫️ Soft overlay (important for readability) */}
+        <div className="fixed inset-0 -z-10 bg-[#fff7ed]/80" />
+
+        {/* 🌐 App Content */}
         <Header />
-        <main className="flex-1 pt-20">
+
+        <main className="flex-1 pt-20 relative z-10">
           {children}
         </main>
+
         <Footer />
+
       </body>
     </html>
   );

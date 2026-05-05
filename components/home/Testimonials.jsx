@@ -34,7 +34,8 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-orange-50 to-white relative overflow-hidden">
+    <section className="py-24 bg-transparent relative overflow-hidden">
+    {/* <section className="py-24 bg-gradient-to-b from-white via-orange-50 to-white relative overflow-hidden"> */}
 
       <Container>
 
